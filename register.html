@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="register.css" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <div class="main">
+      <!-- Video -->
+      <video autoplay loop muted plays-inline class="bg__video">
+        <source src="assets/AdobeStock_472845587_Video_HD_Preview.mov" type="video/mp4" />
+      </video>
+
+      <div class="container" style="font-family: 'Montserrat', sans-serif;">
+        <div class="screen">
+            <div class="screen__content">
+                <h1 style="color:white;" style="font-family: 'Montserrat', sans-serif;">Sign Up</h1><br>
+                <form class="login" action="/register" method="POST">
+
+                    <div class="type" style="font-family: 'Montserrat', sans-serif;">
+                        <label><input id="owner" type="radio" name="type" value="Owner" class="radio">Owner</label>
+                        <label><input id="contractor" type="radio" name="type" value="Contractor" class="radio">Contractor</label>
+                        <label><input id="member" type="radio" name="type" value="Member" class="radio">Member</label>
+                    </div> 
+
+                    <div class="login__field">
+                        <i class="login__icon fas fa-user"></i>
+                        <input type="text" class="login__input" style="color:black" placeholder="Name" id="name" name="name" required>
+                    </div>
+                    <div class="login__field">
+                        <i class="login__icon fas fa-lock"></i>
+                        <input type="email" class="login__input" placeholder="Email" name="email" id="email" required>
+                    </div>
+                    <div class="login__field">
+                        <i class="login__icon fas fa-user"></i>
+                        <input type="password" class="login__input" style="color:black" placeholder="Password" id="password" name="password" required>
+                    </div>
+                    <div class="login__field">
+                        <i class="login__icon fas fa-user"></i>
+                        <input type="tel" class="login__input" style="color:black" placeholder="Mobile" name="phno" id="phno">
+                    </div>
+                    <div class="login__field">
+                        <input type="number" class="login__input" style="color:black; visibility: hidden;" placeholder="Project Code" name="number" id="number">
+                    </div>
+                    <button class="button login__submit" onclick="submitForm()">
+                        <span class="button__text">Sign up</span>
+                        <i class="button__icon fas fa-chevron-right"></i>
+                    </button>				
+                </form>
+                <br><p>Already existing account? <a href="login.html" style="text-decoration: none;">Sign In Now</a></p>
+                <!-- <div class="social-login">
+                    <h3>log </h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-login__icon fab fa-instagram"></a>
+                        <a href="#" class="social-login__icon fab fa-facebook"></a>
+                        <a href="#" class="social-login__icon fab fa-twitter"></a>
+                    </div>
+                </div> -->
+            </div>
+            <div class="screen__background">
+                <span class="screen__background__shape screen__background__shape4"></span>
+                <span class="screen__background__shape screen__background__shape3"></span>		
+                <span class="screen__background__shape screen__background__shape2"></span>
+                <span class="screen__background__shape screen__background__shape1"></span>
+            </div>		
+        </div>
+    </div>
+    </div>
+
+    <script>
+        function submitForm() {
+            var type = document.querySelector('.radio:checked').value;
+            console.log(type)
+    
+            if (type==null) {
+                alert('Please select a member');
+                return;
+            }
+            
+    
+            const formData = {
+                type
+                // Add other form fields to formData if needed
+            };
+    
+            // Assuming you're using fetch for making a POST request
+            fetch('/type', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Handle the response from the backend
+                console.log(data);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
+
+    <script src="./register.js"></script>
+
+  </body>
+</html>
+

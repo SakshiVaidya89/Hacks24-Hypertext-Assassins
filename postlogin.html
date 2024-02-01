@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Symphony Spaces | Admin</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 1.37.1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	<link rel="stylesheet" href="/3d-model-main/style.css">
+	<link rel="stylesheet" href="/mai2.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-wceR2oqQzcm1ZKQV5eG/jPsVITDlyVIRXqzNLeR1lbyz5A7y4ZK2CfUp1IR3fn6V" crossorigin="anonymous">
+     <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script> 
+
+    
+</head>
+
+<body>
+
+
+	<nav style="position: fixed;" style="font-family: 'Montserrat', helvetica;">
+		
+		<div class="nav__logo">
+			<a href="#"></a>
+				<img src="/pages/assets/Screenshot_2024-01-31_230818-removebg-preview.png" style="width: 140px; padding-left: 20px;">
+			</a>
+		</div>
+
+
+			<ul class="nav__links" id="nav-links">
+				<li class="link"><a href="/pages/postlogin.html" style="font-family: 'Montserrat', helvetica;">Home</a></li>
+				<li class="link"><a href="/pages/todo.html" target="_blank" style="font-family: 'Montserrat', helvetica;">Task Managment</a></li>
+				<li class="link"><a href="http://localhost:5173/" style="font-family: 'Montserrat', helvetica;">Connect</a></li>
+				<li class="link"><a href="/expense-tracker/expense.html" style="font-family: 'Montserrat', helvetica;">Budget Track</a></li>
+				<li class="link"><a href="/pages/admindashboard.html" style="font-family: 'Montserrat', helvetica;">Dashboard</a></li>
+				<li class="link"><a href="/pages/feedback.html" style="font-family: 'Montserrat', helvetica;">Feedback</a></li>
+			  </ul>
+
+			  <a href="/Chart/chat.html">
+			<button class="my-button" style="margin:30px" style="text-decoration: none; color: white" >Track Project</button>
+				</a>
+
+    </nav>
+
+
+	<!-- 3D content for your site: -->
+	<div class="container">
+	<div class="company-name">
+		<h1></h1>
+	</div>
+	<div class="model-bg">
+		<model-viewer src="vianney_house_2/scene.gltf" alt="Slum house" shadow-intensity="1" camera-controls auto-rotate disable-zoom >
+		</model-viewer>
+	</div>
+
+	<div class="text typewriter" style="font-family: 'Montserrat', helvetica;">
+		<h1>Every Room Tells a Story,<br> Let Us Design Yours.</h1>
+		<a href="../register.html">
+			<button class="my-button" style="margin:30px" style="text-decoration: none; color: white" >Dashboard</button>
+		</a>
+	</div>
+    
+	<!-- 💁 Include both scripts below to support all browsers! -->
+
+	<!-- Loads <model-viewer> for modern browsers: -->
+	  <script type="module"
+		  src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+	  </script>
+	<!-- Loads <model-viewer> for old browsers like IE11: -->
+	<!-- <script nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+	</script> -->
+	<br><br><br>
+	<section class="section__container about__container" id="about" style="font-family: 'Montserrat', helvetica;">
+
+		<div class="about__content" style="background: center url(/pages/assets/modelbg.jpg);">
+		  <h3 style="color: black;">ABOUT US</h3>
+		  <h2 class="section__header">
+			One stop solution for all interior design needs
+		  </h2><br>
+		  <p class="section__subheader" style="font-size: 1.2rem;">
+			An integrated platform is crucial for streamlined communication, collaboration, and efficiency in project management, featuring real-time updates, task management, cost tracking, and a communication hub. Accessibility across platforms ensures effective coordination..
+		  </p><br>
+		  <div class="about__grid">
+			<div class="about__card">
+			  <h4 style="color: black;">PREVIOUS PROJECTS</h4>
+			  <p>34+</p>
+			</div>
+			<div class="about__card">
+			  <h4 style="color: black;">YEARS EXPERIENCE</h4>
+			  <p>20+</p>
+			</div>
+			<div class="about__card">
+			  <h4 style="color: black;">ONGOING PROJECTS</h4>
+			  <p>12</p>
+			</div>
+		  </div>
+		</div>
+		<div class="about__image">
+			<img src="/pages/assets/modern.png" alt="about" width="400px"/>
+		  </div>
+	  </section>
+
+      <br><br><br><br><br>
+
+	  <section class="section__container client__container" id="client" style="font-family: 'Montserrat', helvetica;">
+		<div class="section__header">
+		  <h2 class="section__title">Browse Features</h2>
+		 
+		</div>
+
+		<div class="client__grid">
+
+			<div class="client__card">
+
+				<div class="client__card__header">
+				<span><i class="ri-double-quotes-r"></i></span>
+				<div class="ratings">
+					<span><i class="ri-star-fill"></i></span>
+					<span><i class="ri-star-fill"></i></span>
+					<span><i class="ri-star-fill"></i></span>
+					<span><i class="ri-star-half-fill"></i></span>
+					<span><i class="ri-star-line"></i></span>
+				</div>
+				</div>
+				
+				<p style="display: flex;">
+				<h1>Task Manager</h1>
+				<i class="fa fa-id-card" aria-hidden="true"></i>
+				</p>
+				
+				<!-- <div class="client__card__footer">
+				<img src="/pages/assets/client.png" alt="client" />
+				<div class="client__details">
+					<h4>Gayatri Ganesh</h4>
+					<p>Business Manager</p>
+				</div> -->
+			  
+			</div>
+	
+
+		  <div class="client__card">
+
+			<div class="client__card__header">
+
+			  <span><i class="ri-double-quotes-r"></i></span>
+			  <div class="ratings">
+				<span><i class="ri-star-fill"></i></span>
+				<span><i class="ri-star-fill"></i></span>
+				<span><i class="ri-star-fill"></i></span>
+				<span><i class="ri-star-fill"></i></span>
+				<span><i class="ri-star-fill"></i></span>
+			  </div>
+			</div>
+			
+			<p>
+			  <h1>Connect with your Workers</h1>
+			</p>
+			<!-- <div class="client__card__footer">
+			  <img src="/pages/assets/client2.png" alt="client" />
+			  <div class="client__details">
+				<h4>Tanmay More</h4>
+				<p>CEO</p>
+			  </div>
+			</div> -->
+		  </div>
+		  <div class="client__card">
+			<div class="client__card__header">
+			  <span><i class="ri-double-quotes-r"></i></span>
+			  <div class="ratings">
+				<span><i class="ri-star-fill"></i></span>
+				<span><i class="ri-star-fill"></i></span>
+				<span><i class="ri-star-fill"></i></span>
+				<span><i class="ri-star-fill"></i></span>
+				<span><i class="ri-star-line"></i></span>
+			  </div>
+			</div>
+			<p>
+			  <h1>Track your Expenses</h1>
+			</p>
+			<!-- <div class="client__card__footer">
+			  <img src="/pages/assets/client3.png" alt="client" />
+			  <div class="client__details">
+				<h4>Dhruv Mehta</h4>
+				<p>Content Writer</p>
+			  </div>
+			</div> -->
+		  </div>
+		</div>
+
+		<div class="client__grid">
+
+			<div class="client__card">
+
+				<div class="client__card__header">
+				<span><i class="ri-double-quotes-r"></i></span>
+				<div class="ratings">
+					<span><i class="ri-star-fill"></i></span>
+					<span><i class="ri-star-fill"></i></span>
+					<span><i class="ri-star-fill"></i></span>
+					<span><i class="ri-star-half-fill"></i></span>
+					<span><i class="ri-star-line"></i></span>
+				</div>
+				</div>
+				
+				<p style="display: flex;">
+				<h1>Project Tracker</h1>
+				<i class="fa fa-id-card" aria-hidden="true"></i>
+				</p>
+				
+				<!-- <div class="client__card__footer">
+				<img src="/pages/assets/client.png" alt="client" />
+				<div class="client__details">
+					<h4>Gayatri Ganesh</h4>
+					<p>Business Manager</p>
+				</div> -->
+			  
+			</div>
+	
+
+		  <div class="client__card">
+
+			<div class="client__card__header">
+
+			  <span><i class="ri-double-quotes-r"></i></span>
+			  <div class="ratings">
+				<span><i class="ri-star-fill"></i></span>
+				<span><i class="ri-star-fill"></i></span>
+				<span><i class="ri-star-fill"></i></span>
+				<span><i class="ri-star-fill"></i></span>
+				<span><i class="ri-star-fill"></i></span>
+			  </div>
+			</div>
+			
+			<p>
+			  <h1>Feedback</h1>
+			</p>
+			<!-- <div class="client__card__footer">
+			  <img src="/pages/assets/client2.png" alt="client" />
+			  <div class="client__details">
+				<h4>Tanmay More</h4>
+				<p>CEO</p>
+			  </div>
+			</div> -->
+		  </div>
+		  <div class="client__card">
+			<div class="client__card__header">
+			  <span><i class="ri-double-quotes-r"></i></span>
+			  <div class="ratings">
+				<span><i class="ri-star-fill"></i></span>
+				<span><i class="ri-star-fill"></i></span>
+				<span><i class="ri-star-fill"></i></span>
+				<span><i class="ri-star-fill"></i></span>
+				<span><i class="ri-star-line"></i></span>
+			  </div>
+			</div>
+			<p>
+			  <h1>Communication</h1>
+			</p>
+			<!-- <div class="client__card__footer">
+			  <img src="/pages/assets/client3.png" alt="client" />
+			  <div class="client__details">
+				<h4>Dhruv Mehta</h4>
+				<p>Content Writer</p>
+			  </div>
+			</div> -->
+		  </div>
+		</div>
+
+	</section>
+
+	
+
+	<br><br><br><br><br>
+
+	  	<section class="tour">
+			<div class="section__container tour__container">
+			  <h4 style="font-family: 'Montserrat', helvetica;">Nurture Your Dream</h4>
+			  <div class="video__container">
+				<video src="/pages/assets/interior3.mp4" autoplay loop muted></video>
+			  </div>
+			</div>
+		</section>
+	  
+		  
+			 
+
+
+
+      <br><br><br><br><br>
+	  <footer class="footer" style="font-family: 'Montserrat', helvetica;">
+		<div class="section__container footer__container">
+		  <div class="footer__col">
+			<h4 style="font-size: 1.8rem;">Symphony Spaces</h4>
+			<p style="font-size: 1.1rem">
+				Analytical tools for monitoring completion rates and a feedback collection system from stakeholders at various project stages would provide valuable insights.
+			</p>
+			<div class="footer__socials">
+			  <span>
+				<a href="#"><i class="ri-facebook-circle-fill"></i></a>
+			  </span>
+			  <span>
+				<a href="#"><i class="ri-instagram-line"></i></a>
+			  </span>
+			  <span>
+				<a href="#"><i class="ri-twitter-fill"></i></a>
+			  </span>
+			</div>
+		  </div>
+		  <div class="footer__col">
+			<h4>Company Info</h4>
+			<a href="#home">Home</a>
+			<a href="#about">About</a>
+			<a href="#project">Project</a>
+			<a href="#contact">Contact</a>
+		  </div>
+		  <div class="footer__col">
+			<h4>Resources</h4>
+			<a href="#">Terms</a>
+			<a href="#">Conditions</a>
+			<a href="#">Policy</a>
+		  </div>
+		  <div class="footer__col">
+			<h4>Contact</h4>
+			<a href="#">
+			  <span><i class="ri-mail-line"></i></span> holux@gmail.com
+			</a>
+			<a href="#">
+			  <span><i class="ri-phone-line"></i></span> +91 9876543210
+			</a>
+		  </div>
+		</div>
+		
+	  </footer>
+  
+	  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	  <script src="main.js"></script>
+</div>
+
+
+</body>
+
+</html>
